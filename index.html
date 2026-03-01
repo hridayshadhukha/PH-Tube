@@ -15,18 +15,43 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- Google fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-
-<style>
-  .inter{
-    font-family: "Inter", sans-serif;
-  }
-</style>
+    <style>
+      .inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body class="inter">
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, suscipit?</h1>
+  <body class="inter w-11/12 mx-auto">
+    <header>
+      <nav class="flex justify-between items-center py-8 border-b-2 border-gray-300">
+        <div class="logo">
+          <img src="./Logo.png" alt="PH-Tube" />
+        </div>
+        <div class="sort">
+          <button class="btn text-lg bg-slate-200 font-medium">Sort by view</button>
+        </div>
+        <div class="blog-btn">
+          <button class="blog-btn btn bg-[#FF1F3D] text-lg text-white font-medium">Blogs</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="category-container" class="flex justify-center py-10 gap-5">
+        <div>
+          <button class="btn btn-sm bg-[#FF1F3D] text-lg text-white">All</button>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="./Script/script.js"></script>
   </body>
 </html>
