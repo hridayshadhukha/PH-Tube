@@ -32,20 +32,34 @@ const displayVideos = (videos) => {
     const videoCard = document.createElement("div");
     videoCard.innerHTML = `
     
-    <div class="card bg-base-100 shadow-sm">
-  <figure>
-    <img
-      src="${video.thumbnail}"
-      alt="Shoes" />
-  </figure>
-  <div class="card-body">
-    <h2 class="card-title">${video.title}</h2>
-    <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-    <div class="card-actions justify-end">
-      <button class="btn btn-primary">Buy Now</button>
-    </div>
-  </div>
-</div>
+    <div class="card bg-base-100">
+          <figure class="relative">
+            <img class="w-full h-[200px] object-cover" src="${video.thumbnail}" alt="Shoes" />
+            <span
+              class="absolute right-2 bottom-2 px-1 rounded text-sm text-white bg-black"
+              >3hrs 56 min ago</span
+            >
+          </figure>
+          <div class="flex gap-2 px-0 py-5">
+            <div>
+              <div class="avatar">
+                <div class="ring-primary ring-offset-base-100 w-8 rounded-full">
+                  <img
+                    src="${video.authors[0].profile_picture}"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="font-bold">
+                ${video.title}
+              </h2>
+              <p class="text-sm text-black/50 flex items-center gap-2 py-1">${video.authors[0].profile_name} <img src="https://img.icons8.com/?size=96&id=98A4yZTt9abw&format=png" alt="" width="20px"></p>
+              <p class="text-sm text-black/50">${video.others.views} Views</p>
+            </div>
+          </div>
+        </div>
 
     `
 
