@@ -41,6 +41,8 @@ function displayCategories(categories) {
 const displayVideos = (videos) => {
   const videosContainer = document.getElementById("videos-container");
 
+  videosContainer.innerHTML = "";
+
   videos.forEach((video) => {
     console.log(video);
 
